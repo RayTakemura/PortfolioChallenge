@@ -1,0 +1,14 @@
+:root{
+    --dark-color: #000000;
+    --bamboo-color: #5ac55a;
+    --paper-color: #fff5df;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
