@@ -18,8 +18,20 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+
 section{
     padding: 60px;
+}
+
+.section-title {
+    font-size: 48px;
+    width: 100%;
+    border-right: 3px solid;
+    padding-right: 20px;
+}
+
+.flex-row {
+    display: flex;
 }
 
 
@@ -89,12 +101,39 @@ header a {
 
 .hero h2 {
     margin: 270px 50px 0 0;
-    text-align: end;
-    color: var(--paper-color);
     text-shadow: 0 0 50px rgb(0, 0, 0, 1);
     font-size:1.55vw;
-    
+    text-align: right;
+    width: 100%;
 }
+
+/* ABOUT ME */
+.introduction {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.introduction .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.introduction img {
+    width: 30%;
+    margin: 3.5% 5% 3.5% 2%;
+    border-radius: 15%;
+}
+
+
+.introduction p {
+    width: 50%;
+    align-self: center;
+    margin: 3.5% 2% 3.5% 10%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 
 /* FOOTER */
 footer {
