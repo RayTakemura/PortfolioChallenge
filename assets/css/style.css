@@ -93,6 +93,7 @@ header a {
     background-size: cover;
     background-position: 10%;
     background-attachment: fixed;
+    width: 100%;
     justify-content:end;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -102,7 +103,6 @@ header a {
 .hero h2 {
     margin: 270px 50px 0 0;
     text-shadow: 0 0 50px rgb(0, 0, 0, 1);
-    font-size:1.55vw;
     text-align: right;
     width: 100%;
 }
@@ -120,7 +120,8 @@ header a {
 }
 
 .introduction img {
-    width: 30%;
+    width: 60%;
+    height: fit-content;
     margin: 3.5% 5% 3.5% 2%;
     border-radius: 15%;
 }
@@ -131,6 +132,12 @@ header a {
     margin: 3.5% 2% 3.5% 10%;
     font-size: 18px;
     line-height: 1.5;
+}
+
+.profpic-container, .proftext {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* WORK */
@@ -147,10 +154,10 @@ header a {
     width: 48%;
     border-radius: 14px;
     border: 10px solid var(--bamboo-color);
-    font-size: 22px;
+    
     margin-bottom: 15px;
     padding: 20px 100px 20px 0;
-    min-height: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -166,7 +173,7 @@ header a {
 .work span{
     background-color: var(--bamboo-color);
     width: 150px;
-    
+    font-size: 22px;
 }
 
 .work-cards {
@@ -286,8 +293,33 @@ footer {
     text-align: center;
 }
 
-
+@media screen and (max-width: 300px) {
+    .introduction p {
+        font-size: 15pxs;
+    }
+    .education p {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
 @media screen and (max-width: 450px) {
+    .contact-items {
+        flex-direction: column;
+    }
+    .contact-items iframe {
+        width:100%;
+        height:min-content;
+        margin-bottom: 10px;
+
+    }
+    .contact-links a {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+
     header {
         padding-bottom: 0;
         justify-content: center;
@@ -308,6 +340,62 @@ footer {
       font-size: 20px;
     }
 
+
+    .profpic-container, .proftext{
+        width:100%
+    }
+
+    .prof-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .work{
+        justify-content: center;
+    }
+
+    .work a{
+        width: 100%;
+        max-height: 100px;
+        padding: 0;
+    }
+
+    .work-cards {
+        width: 90%;
+    }
+    .work span {
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .education {
+        justify-content: center;
+    }
+
+
+    .education .wrapper, .edu-cards {
+        width: 90%;
+    }
+    .edu-cards{
+        flex-direction: column;
+    }
+
+    .edu-card {
+        height: min-content;
+        width: 100%;
+    }
+    
+
+}
+
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    section{
+        padding: 20px;
+    }
     .section-title{
         font-size: 10px;
         border-right: none;
@@ -317,23 +405,14 @@ footer {
         border-bottom: 3px solid;
         padding-bottom: 20px;
         margin-bottom: 50px;
-        width: 50%
+        width: 50%;
     }
-    .wrapper {
-        flex-direction: column;
-
+    .introduction p{
+        margin: 0;
+        text-align: center;
+        width: 100%;
     }
-    .profpic-container, .proftext{
-        width:100%
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .wrapper {
-        flex-direction: column;
-    }
-
-    #profile{
-        transform: scale(0.5);
+    .flex-row{
+        justify-content: center;
     }
 }
