@@ -13,4 +13,4 @@ https://raytakemura.github.io/PortfolioChallenge/.
 ## Contribution
 Ray Takemura
 
-### &c Ray Takemura
+### &copy Ray Takemura
